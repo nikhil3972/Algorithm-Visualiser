@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Algo Visualizer</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="Navbar">
+                <a href="#" class="navbar-brand"><img src="img/Algo.png"><b> Algo Visualizer</b></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span
+                                class="bi bi-house-door"></span>Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="bi bi-lightning"></span>Compare</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span
+                                class="bi bi-dice-6"></span>Miscellaneous</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./About/about.html"><span class="bi bi-info-circle"></span>About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container mt-5">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <div class="titlename">
+                        <h1>Algo Visualizer</h1>
+                        <p>Let's Visualize!</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 overflow-hidden">
+                    <lottie-player src="animation.json" background="transparent" class="float-right" speed="1"
+                        style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col col-sm col-md">
+                <h2>Sorting Algorithms</h2>
+            </div>
+        </div>
+        <div>
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col py-4">
+                    <div class="card" onclick="location.href = 'SortingAlgorithms/InsertionSort/Insertion.html';">
+                        <img src="./img/insertion.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Insertion Sort</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Check out how insertion sort works.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card" onclick="location.href = 'SortingAlgorithms/SelectionSort/Selection.html';">
+                        <img src="./img/sele.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Selection Sort</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Check out how selection sort.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card" onclick="location.href = 'SortingAlgorithms/MergeSort/Merge.html';">
+                        <img src="./img/merge.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Merge Sort</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Sorting done in a beautiful way.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card" onclick="location.href = 'SortingAlgorithms/QuickSort/Quick.html';">
+                        <img src="./img/Quicksort.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Quick Sort</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Partition to sort an array.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4" onclick="location.href = 'SortingAlgorithms/CountingSort/Counting.html';">
+                    <div class="card">
+                        <img src="./img/count.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Counting Sort</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Just count the occurances to sort.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row row-content align-items-center">
+            <div class="col col-sm col-md">
+                <h2>Graph Algorithms</h2>
+            </div>
+        </div>
+        <div>
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <div class="col py-4">
+                    <div class="card">
+                        <img src="./img/DFS.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Depth First Search</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Check out how DFS works on a graph.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card">
+                        <img src="./img/BFS.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Breadth First Search</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Check out how BFS works on graph.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card">
+                        <img src="./img/Dijkstra-Algorithm.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Dijkstra's Algorithm</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Find out minimum distance in graph.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card">
+                        <img src="./img/PRIMS-ALGORITHM.png" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Prim's Algorithm</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Find out minimum spanning tree.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col py-4">
+                    <div class="card">
+                        <img src="./img/kruskals-algorithm-in-algoritms-65-638.jpg" class="card-img-top" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: white;"><b>Kruskal's Algorithm</b></h5>
+
+                            <p class="card-text" style="color: white;"> -Find out minimum spanning tree.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2021 Algo Visualizer Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lottie-player.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+
+</html>
